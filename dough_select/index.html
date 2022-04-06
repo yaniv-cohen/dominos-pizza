@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Pizza Good</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<main>
+		<div id="title">
+			<h1 id="title-h">
+				ארוחה: משפחתית + פיצה שוקולד ב-88
+			</h1>
+			<p>בחירת המרכיבים:</p>
+			<div>
+				<table>
+					<tr>
+						<td>
+							<div class="normal-extreme">
+							</div>
+						</td>
+						<td class="normal-extreme normal-extreme-chosen" id="normal-div">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>
+								פיצות
+							</p>
+						</td>
+						<td>
+							<p>
+								מוגזמות שוקולד<br>Sweetheart
+							</p>
+						</td>
+
+					</tr>
+				</table>
+			</div>
+			<!-- end table -->
+		</div>
+
+		<!-- end title div  -->
+		<div class="main-grid">
+			<div onclick="alert('normal-dough');next();" class="grid-item">
+				<img class="grid-image" src="https://mediacdn.dominos.co.il/_media/items/10423-m.jpg">
+				<div class="grid-item-text">
+					<h1>משפחתית מבצק<br>קלאסי</h1>
+
+					<p>בצק קלאסי, רוטב עגבניות וגבינת מוצרלה<br>מושלמת!</p>
+					<button>בחר</button>
+				</div>
+			</div>
+
+			<div onclick="alert('vegan-dough');next();" class="grid-item">
+				<img class="grid-image" src="https://mediacdn.dominos.co.il/_media/items/12081-m.jpg">
+				<div class="grid-item-text">
+					<h1>משפחתית<br>טבעונית</h1>
+					<p>פיצה משפחתית טבעונית. שימו לב במוצר זה לא נעשה שימוש במרכיבים מן החי אך...</p>
+					<button>בחר</button>
+				</div>
+			</div>
+
+			<div onclick="alert('no-gluten-dough');next();"class="grid-item">
+				<img class="grid-image" src="https://mediacdn.dominos.co.il/_media/items/12429-m.jpg">
+				<div class="grid-item-text">
+					<h1>פיצה ללא גלוטן</h1>
+					<p>הפיצה מיוצרת בכלים נפרדים אך נאפית בתנור משותף ובסביבת עבודה הכוללת גלוטן.</p>
+					<button>בחר</button>
+				</div>
+			</div>
+			<div onclick="alert('cheesy-crust-dough');next();" class="grid-item">
+				<img class="grid-image" src="https://mediacdn.dominos.co.il/_media/items/12642-m.png">
+				<div class="grid-item-text">
+					<h1>ציזי קראסט מוצרלה</h1>
+					<p>
+						הפיצה המעולה שלנו עם שוליים מלאים בגבינת מוצרלה איכותית!
+					</p>
+					<button>בחר</button>
+				</div>
+			</div>
+			<div onclick="alert('pussy-sex-dough');next();"class="grid-item">
+				<img class="grid-image" src="https://mediacdn.dominos.co.il/_media/items/12746-m.jpg">
+				<div class="grid-item-text">
+					<h1>משפחתית מבצק כוסמין</h1>
+					<p>בצק הפיצה מורכב מ-80% קמח כוסמין מלא. עשיר בסיבים תזונתיים, ויטמינים</p>
+					<button>בחר</button>
+				</div>
+			</div>
+
+
+			<div onclick="alert('pro-dough');next();" class="grid-item">
+				<img class="grid-image" src="https://mediacdn.dominos.co.il/_media/items/12778-m.png">
+				<div class="grid-item-text">
+					<h1>פיצת PRO קלאסית</h1>
+					<p>פיצה PRO בתוספת מוצרלה וריקוטה. תמונה להמחשה בלבד</p>
+					<button>בחר</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="bottom-text-div">
+			<p id="bottom-text">
+				התמונות להמחשה בלבד<br>
+				הארוחות בתוקף עד: 30/04/2022
+			</p>
+
+		</div>
+	</main>
+	<button onclick="alert('Close')" id="close">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-x-lg"
+			viewBox="0 0 16 16">
+			<path fill-rule="evenodd"
+				d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+			<path fill-rule="evenodd"
+				d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+		</svg>
+		<p>סגור</p>
+	</button>
+	<button onclick="alert('Accessibility')" id="accessibility-div">
+		<div id="accessibility-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-eye"
+				viewBox="0 0 16 16">
+				<path
+					d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+				<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+			</svg>
+		</div>
+
+		כפתור
+		<br>
+		נגישות
+	</button>
+	<script src="myscript.js"></script>
+</body>
+
+</html>
